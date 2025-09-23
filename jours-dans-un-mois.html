@@ -1,0 +1,228 @@
+
+```html
+<html lang="fr">
+<head>
+    <meta name="google-adsense-account" content="ca-pub-6853916710171263">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6853916710171263"
+     crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://heureactuelle.com/jours-dans-un-mois.html">
+  <title>Jours dans un mois | Combien de jours dans chaque mois ?</title>
+  <meta name="description" content="Découvrez le nombre exact de jours dans n'importe quel mois de l'année. Notre outil simple et précis vous aide à planifier et à organiser votre calendrier.">
+  <meta name="keywords" content="jours dans un mois, combien de jours par mois, calendrier mensuel, nombre de jours, mois">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Jours dans un mois",
+      "description": "Un outil pour trouver le nombre de jours dans n'importe quel mois.",
+      "url": "https://heureactuelle.com/jours-dans-un-mois.html"
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/luxon@3.0.1/build/global/luxon.min.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <svg viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="45" fill="none" stroke="white" stroke-width="5"/>
+        <line x1="50" y1="50" x2="50" y2="20" stroke="white" stroke-width="5"/>
+        <line x1="50" y1="50" x2="70" y2="50" stroke="white" stroke-width="5"/>
+      </svg>
+      <h1>Heure actuelle et Date aujourd'hui</h1>
+    </div>
+    <button class="menu-toggle">&#x2630;</button>
+  </header>
+
+  <nav class="nav">
+    <ul class="nav-list">
+      <li><a href="/" class="nav-link">Accueil</a></li>
+      <li class="dropdown">
+        <a href="#" class="nav-link">Outils</a>
+        <div class="dropdown-content">
+          <a href="/calendrier.html">Calendrier</a>
+          <a href="/date-hier.html">Date d'hier</a>
+          <a href="/date-demain.html">Date de demain</a>
+          <a href="/heure-actuelle.html">Heure actuelle</a>
+          <a href="/jours-restants-annee.html">Jours restants dans l'année</a>
+          <a href="/jours-de-la-semaine.html">Jours de la semaine</a>
+          <a href="/jours-dans-un-mois.html">Jours dans un mois</a>
+          <a href="/numero-de-semaine.html">Numéro de semaine</a>
+          <a href="/prochaine-annee-bissextile.html">Prochaine année bissextile</a>
+          <a href="/horoscope-du-jour.html">Horoscope du jour</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="nav-link">À propos</a>
+        <div class="dropdown-content">
+          <a href="/politique-de-confidentialite.html">Politique de Confidentialité</a>
+          <a href="/contact.html">Contact</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  
+  <main class="main">
+    <div class="card">
+      <h2>Combien de jours y a-t-il dans un mois ?</h2>
+      <p style="text-align: center; margin-bottom: 1.5rem; color: var(--text-primary);">
+        Sélectionnez un mois et une année pour connaître le nombre de jours exact.
+      </p>
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <label for="month-select" style="font-weight: bold; margin-right: 0.5rem;">Mois :</label>
+        <select id="month-select" style="padding: 0.5rem; border-radius: 5px; border: 1px solid var(--secondary);">
+          <option value="1">Janvier</option>
+          <option value="2">Février</option>
+          <option value="3">Mars</option>
+          <option value="4">Avril</option>
+          <option value="5">Mai</option>
+          <option value="6">Juin</option>
+          <option value="7">Juillet</option>
+          <option value="8">Août</option>
+          <option value="9">Septembre</option>
+          <option value="10">Octobre</option>
+          <option value="11">Novembre</option>
+          <option value="12">Décembre</option>
+        </select>
+        <label for="year-input" style="font-weight: bold; margin-left: 1rem; margin-right: 0.5rem;">Année :</label>
+        <input type="number" id="year-input" value="2025" min="1900" max="2100" style="padding: 0.5rem; border-radius: 5px; border: 1px solid var(--secondary); width: 80px;">
+        <button id="calculate-btn" style="padding: 0.5rem 1rem; margin-left: 1rem; background: var(--secondary); color: white; border: none; border-radius: 5px; cursor: pointer; transition: background 0.3s ease;">Calculer</button>
+      </div>
+      <div class="date-display-card">
+        <p class="date-label">Nombre de jours dans le mois sélectionné :</p>
+        <p class="displayed-date" id="days-in-month-result">--</p>
+        <p class="date-label">jours</p>
+      </div>
+      <p style="margin-top: 1.5rem; text-align: center;">
+        Comprendre la durée de chaque mois est essentiel pour une planification efficace, qu'il s'agisse de gérer un budget, d'organiser des événements ou de respecter des délais.
+      </p>
+      <p style="margin-top: 1rem; text-align: center;">
+        Notre outil prend en compte les années bissextiles pour vous donner des résultats toujours précis.
+      </p>
+    </div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6853916710171263"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-6853916710171263"
+     data-ad-slot="1292844179"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    <div class="card">
+      <h2>Le Mystère des Jours Mensuels</h2>
+      <p>Pourquoi les mois ont-ils un nombre de jours différents ? Cette particularité du calendrier grégorien, que nous utilisons aujourd'hui, est le fruit d'une longue histoire et d'ajustements au fil des siècles. Des influences romaines aux modifications impériales, le nombre de jours a été façonné pour s'aligner au mieux sur le cycle solaire.</p>
+      <p style="margin-top: 1rem;">Par exemple, le mois de février, avec ses 28 ou 29 jours (lors des années bissextiles), est une anomalie notable. Il s'agit d'un héritage des réformes calendaires romaines, où février était le dernier mois de l'année et a été raccourci pour des raisons complexes liées à la religion et à l'astronomie.</p>
+      <p style="margin-top: 1rem;">Cette page vous permet de naviguer facilement à travers ces subtilités, vous offrant un aperçu rapide et précis du nombre de jours de chaque mois, vous aidant ainsi à mieux comprendre et utiliser le calendrier.</p>
+    </div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6853916710171263"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-6853916710171263"
+     data-ad-slot="6353599164"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    <div class="card">
+      <h2>FAQ sur le nombre de jours par mois</h2>
+      <div class="faq-container">
+        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <summary itemprop="name">Combien de jours y a-t-il dans les mois de 30 jours ?</summary>
+          <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Les mois de 30 jours sont Avril, Juin, Septembre et Novembre.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <summary itemprop="name">Quels mois ont 31 jours ?</summary>
+          <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Les mois qui ont 31 jours sont Janvier, Mars, Mai, Juillet, Août, Octobre et Décembre.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <summary itemprop="name">Comment savoir si Février a 28 ou 29 jours ?</summary>
+          <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <p itemprop="text">Février a 29 jours lors d'une année bissextile, qui survient tous les quatre ans. Une année est bissextile si elle est divisible par 4, sauf si elle est divisible par 100 mais pas par 400.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </main>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6853916710171263"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-6853916710171263"
+     data-ad-slot="2315431246"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  <footer class="footer">
+    <p>&copy; 2025 Heure actuelle et Date aujourd'hui. Tous droits réservés.</p>
+  <a href="https://whatistodaydate.com/" style="color: white;">Today Date</a> - 
+  <a href="https://heureactuelle.com/sitemap.html" style="color: white;">Sitemap</a>
+  </footer>
+
+  <button class="dark-mode-toggle" id="darkModeToggle">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+      <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75zM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0zm11.394 5.834a.75.75 0 0 1-.082 1.06l-1.591 1.591a.75.75 0 1 1-1.06-1.06l1.591-1.591a.75.75 0 0 1 1.06.082z"/>
+    </svg>
+  </button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const monthSelect = document.getElementById('month-select');
+      const yearInput = document.getElementById('year-input');
+      const calculateBtn = document.getElementById('calculate-btn');
+      const daysInMonthResult = document.getElementById('days-in-month-result');
+
+      // Set current month and year as default
+      const now = luxon.DateTime.local();
+      monthSelect.value = now.month;
+      yearInput.value = now.year;
+      
+      function calculateDaysInMonth() {
+        const selectedMonth = parseInt(monthSelect.value);
+        const selectedYear = parseInt(yearInput.value);
+        
+        // Create a Luxon DateTime object for the selected month and year
+        const date = luxon.DateTime.local(selectedYear, selectedMonth, 1);
+        daysInMonthResult.textContent = date.daysInMonth;
+      }
+
+      calculateBtn.addEventListener('click', calculateDaysInMonth);
+      monthSelect.addEventListener('change', calculateDaysInMonth);
+      yearInput.addEventListener('change', calculateDaysInMonth);
+
+      // Initial calculation on page load
+      calculateDaysInMonth();
+
+      document.querySelector('.menu-toggle').addEventListener('click', () => {
+        document.querySelector('.nav-list').classList.toggle('active');
+      });
+
+      const darkModeToggle = document.getElementById('darkModeToggle');
+      darkModeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+      });
+
+      if (localStorage.getItem('darkMode') === 'true') {
+        document.body.classList.add('dark-mode');
+      }
+    });
+  </script>
+
+</body>
+</html>
